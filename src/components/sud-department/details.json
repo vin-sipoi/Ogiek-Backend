@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sud_department_details",
+  "info": {
+    "displayName": "details"
+  },
+  "options": {},
+  "attributes": {
+    "sub": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sud-department.sub-department-component"
+    }
+  }
+}

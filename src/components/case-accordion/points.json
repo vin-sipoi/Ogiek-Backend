@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_case_accordion_points",
+  "info": {
+    "displayName": "points",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "subpoints": {
+      "displayName": "subpoints",
+      "type": "component",
+      "repeatable": true,
+      "component": "subpoint.subpoints"
+    }
+  }
+}

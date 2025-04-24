@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "achievements",
+  "info": {
+    "singularName": "achievement",
+    "pluralName": "achievements",
+    "displayName": "Achievement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "paragraphs": {
+      "displayName": "paragraphs",
+      "type": "component",
+      "repeatable": true,
+      "component": "para.paragraphs"
+    }
+  }
+}

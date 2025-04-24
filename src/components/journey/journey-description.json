@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_journey_journey_descriptions",
+  "info": {
+    "displayName": "journey-description"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

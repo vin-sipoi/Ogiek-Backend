@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_main_department_main_departments",
+  "info": {
+    "displayName": "main_department"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sub_department": {
+      "displayName": "sub_department_component",
+      "type": "component",
+      "repeatable": true,
+      "component": "sud-department.sub-department-component"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "strategic_pillars",
+  "info": {
+    "singularName": "strategic-pillar",
+    "pluralName": "strategic-pillars",
+    "displayName": "Strategic Pillar",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "no": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "main_color": {
+      "type": "string"
+    },
+    "objectives": {
+      "displayName": "objective",
+      "type": "component",
+      "repeatable": true,
+      "component": "obj.objective"
+    }
+  }
+}

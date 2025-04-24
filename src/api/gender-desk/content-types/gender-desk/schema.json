@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "gender_desks",
+  "info": {
+    "singularName": "gender-desk",
+    "pluralName": "gender-desks",
+    "displayName": "gender-desk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_text": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "coreAreas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main-department.main-department"
+    }
+  }
+}

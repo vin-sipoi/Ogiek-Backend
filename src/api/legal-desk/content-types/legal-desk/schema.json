@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "legal_desks",
+  "info": {
+    "singularName": "legal-desk",
+    "pluralName": "legal-desks",
+    "displayName": "Legal-Desk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_text": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "coreAreas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main-department.main-department"
+    }
+  }
+}

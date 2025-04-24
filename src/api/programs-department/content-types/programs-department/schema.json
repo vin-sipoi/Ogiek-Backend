@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "programs_departments",
+  "info": {
+    "singularName": "programs-department",
+    "pluralName": "programs-departments",
+    "displayName": "programs-department"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_text": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "coreAreas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main-department.main-department"
+    }
+  }
+}

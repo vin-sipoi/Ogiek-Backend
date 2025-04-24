@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "conversation_desks",
+  "info": {
+    "singularName": "conversation-desk",
+    "pluralName": "conversation-desks",
+    "displayName": "conversation-desk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "main_text": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "coreAreas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "main-department.main-department"
+    }
+  }
+}

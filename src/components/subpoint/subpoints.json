@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_subpoint_subpoints",
+  "info": {
+    "displayName": "subpoints"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "who_we_are_heroes",
+  "info": {
+    "singularName": "who-we-are-hero",
+    "pluralName": "who-we-are-heroes",
+    "displayName": "Who-We-Are-Hero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

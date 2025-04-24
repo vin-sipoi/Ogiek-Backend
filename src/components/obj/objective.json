@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_obj_objectives",
+  "info": {
+    "displayName": "objective"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

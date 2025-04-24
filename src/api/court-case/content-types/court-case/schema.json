@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "court_cases",
+  "info": {
+    "singularName": "court-case",
+    "pluralName": "court-cases",
+    "displayName": "Court-Case",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ruling": {
+      "type": "text"
+    },
+    "points": {
+      "displayName": "points",
+      "type": "component",
+      "repeatable": true,
+      "component": "case-accordion.points"
+    }
+  }
+}

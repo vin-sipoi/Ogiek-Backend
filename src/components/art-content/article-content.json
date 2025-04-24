@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_art_content_article_contents",
+  "info": {
+    "displayName": "ArticleContent"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "paragraph",
+        "image"
+      ]
+    },
+    "text": {
+      "type": "text"
+    },
+    "src": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

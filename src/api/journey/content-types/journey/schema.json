@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journeys",
+  "info": {
+    "singularName": "journey",
+    "pluralName": "journeys",
+    "displayName": "Journey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "span": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "journey_description": {
+      "displayName": "journey-description",
+      "type": "component",
+      "repeatable": true,
+      "component": "journey.journey-description"
+    }
+  }
+}
