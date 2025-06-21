@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vincents",
+  "info": {
+    "singularName": "vincent",
+    "pluralName": "vincents",
+    "displayName": "Vincent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "vincente": {
+      "displayName": "vin-component",
+      "type": "component",
+      "repeatable": true,
+      "component": "vin.vin-component"
+    }
+  }
+}

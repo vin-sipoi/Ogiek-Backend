@@ -127,6 +127,17 @@ export interface SudDepartmentSubDepartmentComponent
   };
 }
 
+export interface VinVinComponent extends Struct.ComponentSchema {
+  collectionName: 'components_vin_vin_components';
+  info: {
+    displayName: 'vin-component';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -141,6 +152,7 @@ declare module '@strapi/strapi' {
       'subpoint.subpoints': SubpointSubpoints;
       'sud-department.details': SudDepartmentDetails;
       'sud-department.sub-department-component': SudDepartmentSubDepartmentComponent;
+      'vin.vin-component': VinVinComponent;
     }
   }
 }

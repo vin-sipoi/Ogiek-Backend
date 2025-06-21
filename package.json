@@ -15,19 +15,32 @@
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
   "dependencies": {
+    "@codemirror/basic-setup": "^0.20.0",
+    "@codemirror/lang-javascript": "^6.2.3",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.36.6",
+    "@strapi/admin": "^5.12.6",
+    "@strapi/data-transfer": "^5.12.6",
     "@strapi/plugin-cloud": "5.12.5",
     "@strapi/plugin-users-permissions": "5.12.5",
     "@strapi/strapi": "5.12.5",
+    "@strapi/types": "^5.12.6",
     "better-sqlite3": "11.3.0",
+    "date-fns": "^4.1.0",
+    "esbuild": "^0.25.3",
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
+    "semver": "^7.7.1",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/semver": "^7",
     "typescript": "^5"
   },
   "engines": {

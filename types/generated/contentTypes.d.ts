@@ -1004,6 +1004,36 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiVincentVincent extends Struct.CollectionTypeSchema {
+  collectionName: 'vincents';
+  info: {
+    displayName: 'Vincent';
+    pluralName: 'vincents';
+    singularName: 'vincent';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::vincent.vincent'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    vincente: Schema.Attribute.Component<'vin.vin-component', true>;
+  };
+}
+
 export interface ApiWhoWeAreHeroWhoWeAreHero extends Struct.SingleTypeSchema {
   collectionName: 'who_we_are_heroes';
   info: {
@@ -1563,6 +1593,7 @@ declare module '@strapi/strapi' {
       'api::statement.statement': ApiStatementStatement;
       'api::strategic-pillar.strategic-pillar': ApiStrategicPillarStrategicPillar;
       'api::team.team': ApiTeamTeam;
+      'api::vincent.vincent': ApiVincentVincent;
       'api::who-we-are-hero.who-we-are-hero': ApiWhoWeAreHeroWhoWeAreHero;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

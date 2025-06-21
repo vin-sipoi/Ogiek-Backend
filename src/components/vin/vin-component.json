@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_vin_vin_components",
+  "info": {
+    "displayName": "vin-component"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
